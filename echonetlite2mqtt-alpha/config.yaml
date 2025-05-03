@@ -1,6 +1,6 @@
 name: "ECHONETLite2MQTT-alpha"
-description: "ECHONET Lite to MQTT bridge."
-version: "latest"
+description: "the alpha version of ECHONETLite2MQTT."
+version: "v3.6.0-alpha"
 slug: "echonetlite2mqtt-alpha"
 image: ghcr.io/banban525/echonetlite2mqtt-addon/{arch}
 url: https://github.com/banban525/echonetlite2mqtt

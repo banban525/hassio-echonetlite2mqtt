@@ -31,7 +31,7 @@ __Manual registration__
 
 2.2. If `ECHONETLite2MQTT` is not available, run "Check for updates" from the menu in the upper right. Refresh the web page if necessary.
 
-2.3. Open `ECHONETLite2MQTT` . `ECHONETLite2MQTT-alpha` is the development version. Use it only if you need the latest features.
+2.3. Open `ECHONETLite2MQTT` . `ECHONETLite2MQTT-alpha` is the development edition for testing. Use it only if you need the latest features.
 
 2.4. Click the "INSTALL" button to install.
 

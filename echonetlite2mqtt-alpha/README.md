@@ -1,6 +1,8 @@
 # ECHONETLite2MQTT-alpha
 
-ECHONET Lite to MQTT bridge.
+This is the alpha edition of ECHONETLite2MQTT.
+You should use `ECHONETLite2MQTT` normally.
+
 
 ## Description
 
