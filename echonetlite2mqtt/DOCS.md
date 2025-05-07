@@ -10,6 +10,7 @@ __MQTT parameters__
 
 | parameter           | description |
 | ------------------  | ----------- |
+| `MQTT_DISABLE_AUTO_CONFIG` | Disable automatic import of MQTT settings. |
 | `MQTT_BROKER`       | The MQTT broker's URL. starts with "mqtt://" or "mqtts://".  |
 | `MQTT_PORT`         | The MQTT broker port number. (Default: 1883) |
 | `MQTT_CLIENT_ID`    | The MQTT client id. (Default: empty)|
@@ -89,6 +90,7 @@ __MQTT パラメーター__
 
 | parameter           | description |
 | ------------------  | ----------- |
+| `MQTT_DISABLE_AUTO_CONFIG` | MQTT設定の自動取り込みを無効化します。 |
 | `MQTT_BROKER`       | MQTTブローカーのURLを指定します。"mqtt://" または "mqtts://"で始まる必要があります。  |
 | `MQTT_PORT`         | MQTTブローカーのポートNoを指定します。(デフォルト: 1883) |
 | `MQTT_CLIENT_ID`    | MQTTのクライアントIDを指定します。 (Default: (空)) |
