@@ -32,10 +32,10 @@ __ECHONET Lite parameters__
 | `ECHONET_DEVICE_IP_LIST`                | Specify the device IPs separated by commas. (Default: none) |
 | `ECHONET_COMMAND_TIMEOUT`               | Specify the timeout for ECHONET Lite commands. (Unit: ms) (Default: 3000) |
 | `ECHONET_DISABLE_AUTO_DEVICE_DISCOVERY` | Disable automatic device discovery. (default: off) |
-| `ECHONET_ALIAS_FILE`                    | The file path for alias option file. See the "file path" section for file locations. (Defalt: (empty)) |
+| `ECHONET_ALIAS_FILE`                    | The file path for alias option file. See the "file path" section for file locations. (Defalt: not use) |
 | `ECHONET_LEGACY_MULTI_NIC_MODE`         | Revert to legacy communication mode. (Default: off) |
 | `ECHONET_UNKNOWN_AS_ERROR`              | Specifies whether to  treat unknown classes and unknown properties as errors. (Default: off) |
-
+| `ECHONET_USER_CUSTOM_MRA_FOLDER`        | The folder path for user custom MRA files. (Default: not use) |
 
 ## file path
 
@@ -46,18 +46,22 @@ Place the files for the following parameters in the `xxxxxxxx_echonetlite2mqtt` 
 
 * `MQTT_OPTION_FILE`
 * `ECHONET_ALIAS_FILE`
+* `ECHONET_USER_CUSTOM_MRA_FOLDER`
 
 Sample
 ```
 \\(Home Assistant IP)\addon_configs\885b0f86_echonetlite2mqtt\
 ├─ aliasFile.json
-└─ mqtt_option.json
+├─ mqtt_option.json
+└─ my_custom_mra\
+    └─ 0x0130.json
 ```
 
 For the file placement above, specify as follows.
 
 * `MQTT_OPTION_FILE` : `mqtt_option.json`
 * `ECHONET_ALIAS_FILE` : `aliasFile.json`
+* `ECHONET_USER_CUSTOM_MRA_FOLDER` : `my_custom_mra`
 
 
 The files for the following parameters should be placed under the `ssl` folder and the relative path from the ‘ssl‘ folder should be specified.
@@ -110,10 +114,10 @@ __ECHONET Lite パラメーター__
 | `ECHONET_DEVICE_IP_LIST`                | デバイスのIPをカンマ区切りで指定します。(デフォルト:無し) |
 | `ECHONET_COMMAND_TIMEOUT`               | ECHONET Liteコマンドの応答待ちの時間を指定します. (単位: ms) (デフォルト: 3000) |
 | `ECHONET_DISABLE_AUTO_DEVICE_DISCOVERY` | デバイスの自動探索を無効にします。(デフォルト: off) |
-| `ECHONET_ALIAS_FILE`                    | エイリアスオプションファイルを指定します。 (デフォルト: (空)) |
+| `ECHONET_ALIAS_FILE`                    | エイリアスオプションファイルを指定します。 (デフォルト: 使用しない) |
 | `ECHONET_LEGACY_MULTI_NIC_MODE`         | 以前の通信モードに戻します。 (デフォルト: off) |
 | `ECHONET_UNKNOWN_AS_ERROR`              | 不明なデバイスクラスや不明なプロパティをエラーとして扱います。 (デフォルト: off) |
-
+| `ECHONET_USER_CUSTOM_MRA_FOLDER`        | ユーザー定義MRAフォルダを指定します。(デフォルト: 使用しない) |
 
 
 
@@ -127,18 +131,22 @@ __ECHONET Lite パラメーター__
 
 * `MQTT_OPTION_FILE`
 * `ECHONET_ALIAS_FILE`
+* `ECHONET_USER_CUSTOM_MRA_FOLDER`
 
 サンプル
 ```
 \\(Home Assistant IP)\addon_configs\885b0f86_echonetlite2mqtt\
 ├─ aliasFile.json
-└─ mqtt_option.json
+├─ mqtt_option.json
+└─ my_custom_mra\
+    └─ 0x0130.json
 ```
 
 上記のようなファイル配置の場合、以下のように指定します。
 
 * `MQTT_OPTION_FILE` : `mqtt_option.json`
 * `ECHONET_ALIAS_FILE` : `aliasFile.json`
+* `ECHONET_USER_CUSTOM_MRA_FOLDER` : `my_custom_mra`
 
 
 次のパラメーターのファイルは、 `ssl` フォルダ以下に配置し、`ssl` からの相対パスを指定してください。
