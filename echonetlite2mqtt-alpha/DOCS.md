@@ -23,6 +23,12 @@ __MQTT parameters__
 | `MQTT_BASE_TOPIC`   | MQTT topic prefix. (Default:"echonetlite2mqtt/elapi/v2/devices") |
 
 
+__REST API parameters__
+
+| parameter           | description |
+| ------------------  | ----------- |
+| `REST_API_SERVER_SENT_EVENT_METHOD` | `--RestApiServerSentEventMethod` | Specifies how server events are sent on the web page. The default is WebSocket, and specifying 1 will enable long polling. If the web page does not refresh automatically, try 1. (Default: WebSocket) |
+
 
 __ECHONET Lite parameters__
 
@@ -105,6 +111,15 @@ __MQTT パラメーター__
 | `MQTT_CERT_FILE`    | MQTTの cert ファイルのパスを指定します。パスが指定されればロードして、MQTTのオプションの"cert"に設定されます。ファイルの配置場所については、"ファイルパス"セクションを参照してください。 (デフォルト: ロードしない)  |
 | `MQTT_KEY_FILE`     | MQTTの key ファイルのパスを指定します。パスが指定されればロードして、MQTTのオプションの"key"に設定されます。ファイルの配置場所については、"ファイルパス"セクションを参照してください。  (デフォルト: ロードしない)  |
 | `MQTT_BASE_TOPIC`   | MQTTトピックのプレフィックスを指定します。(デフォルト:"echonetlite2mqtt/elapi/v2/devices") |
+
+
+__REST API パラメーター__
+
+| parameter           | description |
+| ------------------  | ----------- |
+| `REST_API_SERVER_SENT_EVENT_METHOD` | `--RestApiServerSentEventMethod` | Webページでのサーバーイベント送信方法を指定します。デフォルトはWebSocket、1を指定するとロングポーリングになります。Webページが自動更新しない場合、1を試してください。(デフォルト: WebSocket) |
+
+
 
 __ECHONET Lite パラメーター__
 
