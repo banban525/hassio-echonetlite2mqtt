@@ -1,6 +1,6 @@
 name: "ECHONETLite2MQTT"
 description: "ECHONET Lite to MQTT bridge."
-version: "v3.6.0"
+version: "v3.7.0"
 slug: "echonetlite2mqtt"
 image: ghcr.io/banban525/echonetlite2mqtt-addon/{arch}
 url: https://github.com/banban525/echonetlite2mqtt
@@ -35,6 +35,7 @@ schema:
   MQTT_CERT_FILE: str?
   MQTT_KEY_FILE: str?
   MQTT_BASE_TOPIC: str?
+  REST_API_SERVER_SENT_EVENT_METHOD: int(0,1)?
   ECHONET_TARGET_NETWORK: str?
   ECHONET_DEVICE_IP_LIST: str?
   ECHONET_COMMAND_TIMEOUT: int?
@@ -42,4 +43,4 @@ schema:
   ECHONET_ALIAS_FILE: str?
   ECHONET_LEGACY_MULTI_NIC_MODE: bool?
   ECHONET_UNKNOWN_AS_ERROR: bool?
-
+  ECHONET_USER_CUSTOM_MRA_FOLDER: str?
