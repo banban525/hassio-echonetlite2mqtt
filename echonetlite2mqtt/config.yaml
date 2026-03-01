@@ -1,6 +1,6 @@
 name: "ECHONETLite2MQTT"
 description: "ECHONET Lite to MQTT bridge."
-version: "v3.7.0"
+version: "v3.7.2"
 slug: "echonetlite2mqtt"
 image: ghcr.io/banban525/echonetlite2mqtt-addon/{arch}
 url: https://github.com/banban525/echonetlite2mqtt

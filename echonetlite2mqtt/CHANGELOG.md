@@ -1,3 +1,17 @@
+## v3.7.2
+
+Fixed:
+
+* Unable to receive INF in version 3.7.1.
+
+
+## v3.7.1
+
+Fixed:
+
+* The property definition with the oldest version was always used. Now the property definition that matches the device version is used.
+
+
 ## v3.7.0
 
 New features
