@@ -1,3 +1,9 @@
+## v3.7.3
+
+Fixed:
+
+* UNode Profile properties were recognized as unknown properties in ver.3.7.1 or later.
+
 ## v3.7.2
 
 Fixed:
